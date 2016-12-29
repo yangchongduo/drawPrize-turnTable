@@ -1,0 +1,46 @@
+{
+  "head": {
+    "ret": 0,
+    "msg": "OK"
+  },
+  "body": {
+    "drawChanceLeft": 0,
+    "drawActs": [
+      {
+      "received": true,
+      "drawId": "owik0Qui1shu1tathueg1baupauGho2s",
+      "mobile": "18900000000",
+      "prizeId": "2",
+      "prizeInfo": {
+        "redeemInfo": [{
+          "redeemType": "AVD1KYBW8001",
+          "redeemCode": "460E55C4E4EE4B21"
+        }],
+        "rechargeInfo": {
+          "rechargeType": "AVD1KYBW8008",
+          "rechargeAmount": "100.00"
+        }
+      }
+    },
+      {
+        "received": false,
+        "prizeId": "3",
+        "drawId": "ou0Cahh9iez7kohnootaonahNoom6iyo"
+      },
+      {
+        "received": false,
+        "prizeId": "4",
+        "drawId": "ou0Cahh9iez7kohnootaonahNoom6iyo"
+      },
+      {
+        "received": false,
+        "prizeId": "3",
+        "drawId": "ou0Cahh9iez7kohnootaonahNoom6iyo"
+      },
+      {
+        "received": false,
+        "prizeId": "3",
+        "drawId": "ou0Cahh9iez7kohnootaonahNoom6iyo"
+      }]
+  }
+}

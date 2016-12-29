@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/* line 5, G:/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+html{
+	width: 100%;
+	height: 100%;
+	font-family: "Microsoft YaHei";
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+body{
+	width: 100%;
+	background: #fff;
+	height: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.turntable-game{
+	width: 100%;
+	/*background: url(../images/turntable-bg.png) no-repeat;*/
+	background-size:100% 100%;
+	overflow:hidden ;
+}
+.turntable-bg a{
+	-webkit-tap-highlight-color: transparent;
+	text-decoration: none;
+}
+.turntable-bg ul,.winner-show ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.turntable-bg li{
+	box-sizing: border-box;
+}
+.turntable-bg img{
+	border: 0;
+	vertical-align: top;
+}
+
+.turntable-bg{
+	position: relative;
+	padding: 1rem 0 0;;
+	width: 100%;
+	box-sizing: border-box;
+}
+.turn-title img{
+	width: 100%;
+}
+.money{
+	margin: 0.2rem auto 0;
+	width: 10rem;
+	font-size: 0.7rem;
+	text-align: center;
+	background: #FFE74A;
+	color: #FF423A;
+	padding: 0.2rem;
+	border-radius: 1rem;
+}
+.turn-content{
+	position: relative;
+	margin: .1rem auto;
+	width: 80%;
+	height: 5.5rem;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.rotate img{
+	width: 100%;
+}
+.rotate{
+	width: 100%;
+	position: absolute;
+	left: 0;top: 0;
+	z-index: 10;
+}
+.pointer img{
+	width: 100%;
+}
+.pointer{
+	position: absolute;
+	width: 1.4rem;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin: 1.4rem auto;
+	z-index: 20;
+}
+.shadow img{
+	width: 100%;
+}
+.shadow{
+	width: 4rem;
+	position: absolute;
+	bottom: -.4rem;
+	left: 51%;
+	margin-left: -2rem;
+	z-index: 8;
+}
+.remain{
+	display: none;
+	margin: 0.1rem auto 0.1rem;
+	font-size: 0.3rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+#num{
+	display: inline-block;
+	padding: 0 .2rem;
+	color: #FFE74A;
+}
+.remain_progress{
+	position: relative;
+	margin: 0.1rem auto;
+	width: 55%;
+	height: 0.06rem;
+	background: #FFFCF5;
+}
+.progress{
+	position: absolute;
+	left: 0;top: 0;
+	width: 100%;
+	height: 100%;
+	background: #FFE74A;
+}
+.rule{
+	width: 100%;
+	margin: .1rem auto;
+	padding: 0.2rem 0.3rem 0.1rem 0.2rem;
+	box-sizing: border-box;
+	background: rgba(1,1,1,0.2);
+	color: #f5f5f5;
+	font-size: .3rem;
+	border-radius: 5px;
+}
+.go{
+	display: block;
+	width: 15rem;
+	margin: 0.5rem auto;
+	font-size: 0.8rem;
+	color: #FF423A;
+	text-align: center;
+	padding: 0.3rem;
+	box-sizing: border-box;
+	background: #FFE74A;
+	border-radius: 1rem;
+}
+.winner-show{
+	width: 90%;
+	margin: .2rem auto;
+	border-radius: .3rem;
+	background: #fff;
+	overflow: hidden;
+}
+
+.animate{
+	-webkit-transition:all .3s ease-out ;
+	transition: all .3s ease-out;
+	transform:translateY(-2rem);
+}
+
+.winner-list{
+	position: relative;
+	width: 100%;
+	height: 4rem;
+	overflow: hidden;
+}
+.my-gift{
+	width: 100%;
+	overflow: hidden;
+	overflow-y:auto;
+}
+.luck-list{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: auto;
+}
+.list-title ul{
+	height: 1rem;
+	line-height:1rem;
+	width: 100%;
+}
+.list-title li{
+	text-align: center;
+	font-size: .4rem;
+	width: 50%;
+	float: left;
+}
+.list-show-on{
+	border-bottom: 2px solid #FF423A;
+	color:#FF423A;
+}
+.winner-list ul li,.my-gift ul li{
+	border: none;
+	height:1rem;
+	line-height:1rem;
+	padding-left: .4rem;
+	font-size: .4rem;
+}
+.my-gift{
+	display:none;
+
+}
+.to-get{
+	float: right;
+	margin-right: .2rem;
+	margin-top: .1rem;
+	width:1rem;
+	height:.8rem;
+	line-height: .8rem;
+	font-size: .4rem;
+	text-align: center;
+	background:#FF423A;
+	border-radius: .2rem;
+	color: #fff;
+}
+/**中奖窗口**/
+.bg-mask {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 10000;
+}
+.drawResult{
+	display: none;
+	position: fixed;
+	top: 60%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 10003;
+	width: 100%;
+	height: 5.5rem;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background-size: 100%;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+/* line 265, ../sass/model/_alert.scss */
+.drawResult.myactive {
+	top: 49%;
+	visibility: visible;
+	width: 100%;
+	height: 6rem;
+}
+/* line 272, ../sass/model/_alert.scss */
+.drawResult .gongxi {
+	top: -30%;
+	height: 4rem;
+	position: absolute;
+	left: 52%;
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+/* line 280, ../sass/model/_alert.scss */
+.drawResult p {
+	top: 12%;
+	width: 100%;
+	position: absolute;
+	font-size: .5rem;
+	color: #fff;
+	font-family: "Microsoft YaHei";
+	text-align: center;
+}
+/* line 290, ../sass/model/_alert.scss */
+.drawResult .imgJiangPin {
+	bottom:1.4rem;
+	position: absolute;
+	width:60%;
+	height: 3rem;
+	left: 50%;
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+/* line 298, ../sass/model/_alert.scss */
+.btn_Get_box{
+	bottom: .3rem;
+	position: absolute;
+	height: .8rem;
+	width: 80%;
+	left: 50%;
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	color: #fff;
+	font-size: .4rem;
+	cursor: pointer;
+	overflow: hidden;
+}
+.drawResult .btn_Get {
+	font-family: "Microsoft YaHei";
+	border: none;
+	-webkit-appearance: none;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: .4rem;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	outline: none;
+
+}
+
+.drawResult .btn_Get:hover {
+	background: #24A91D;
+}
+.drawResult .colseJiangPin {
+	width: .6rem;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+/**媒体查询**/
+@media screen and (max-width:360px){
+
+	.drawResult{
+		width: 98%!important;
+	}
+
+}

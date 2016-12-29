@@ -1,0 +1,45 @@
+﻿{
+  "head": {
+    "ret": 0,
+    "msg": "OK"
+  },
+  "body": {
+    "events": [
+      {
+      "encryptedMobile": "181****0000",
+      "createTime": "1458029972201",
+      "prizeId": "1"
+    },
+      {
+        "encryptedMobile": "182****0000",
+        "createTime": "1458029972201",
+        "prizeId": "1"
+      },
+      {
+        "encryptedMobile": "183****0000",
+        "createTime": "1458029972201",
+        "prizeId": "1"
+      },
+      {
+        "encryptedMobile": "184****0000",
+        "createTime": "1458029972201",
+        "prizeId": "1"
+      },
+      {
+        "encryptedMobile": "185****0000",
+        "createTime": "1458029972201",
+        "prizeId": "1"
+      },
+      {
+        "encryptedMobile": "186****0000",
+        "createTime": "1458029972201",
+        "prizeId": "1"
+      },
+      {
+        "encryptedMobile": "187****0000",
+        "createTime": "1458029972201",
+        "prizeId": "1"
+      }
+    ]
+  }
+}
